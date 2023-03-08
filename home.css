@@ -1,0 +1,452 @@
+*{
+      margin: 0;
+      padding: 0;
+
+
+}
+
+  
+#loading{
+      width: 100%;
+      height: 100vh;
+      background: #fff url('https://gifimage.net/wp-content/uploads/2017/10/doraemon-gif-10.gif') no-repeat center ;
+      position: fixed;
+      z-index: 9999;
+}
+.highlight{
+          text-shadow: 0 0 5px #03e9f4,
+         0 0 15px #03e9f4,
+         0 0 20px #03e9f4,
+         0 0 50px #03e9f4;
+}
+
+body{
+        background-color: #242425;
+}
+
+  .navbar{
+        width: 100%;
+        height:10vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        
+
+        
+  }
+  .navbar ul{
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+  }
+  .navbar ul li a{
+           color: rgb(16, 81, 212);
+           text-decoration: none;
+           font-size: 1.3rem;
+           font-weight: bold;
+  }
+  .navbar ul li a:hover{
+             color: red;
+         text-shadow: 0 0 5px #03e9f4,
+         0 0 15px #03e9f4,
+         0 0 20px #03e9f4,
+         0 0 50px #03e9f4;
+  }
+  .logo{
+      width: 3%;
+  }
+  .intro{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: left;
+        background-image: url('https://cdn141.picsart.com/253538868029202.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+  }
+  .names{
+       width: 60%;
+       height: 50%;
+       margin-top: 7%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: 5%;
+       color: #fff;
+  }
+  a{
+    text-decoration: none;
+  }
+  .names a{
+           font-size: 4rem;
+           color: #fff;
+           position: relative;
+           font-family: 'Rampart One', cursive;
+           /* text-shadow: 5 0 5px pink,
+         0 0 15px pink,
+         0 0 20px pink,
+         0 0 50px pink; */
+         text-shadow: 3px 2px 10px magenta,  
+         3px 2px 10px magenta;
+  }
+  #heart{
+
+            animation: raj 1s infinite;
+            position: absolute;
+            filter: blur(1px);
+           
+            
+  }
+  .date{
+      position: absolute;
+      margin-top: 10%;
+      
+  }
+
+  @keyframes raj {
+      0%{
+         font-size: 4rem;
+         color: #fafafa;     
+      }
+      25%{
+              font-size: 5rem;
+              color: #ff0000;
+              text-shadow: 0px 0px 20px red;
+
+      }
+
+      50%{
+            font-size: 4.5rem;
+            color: #504b4b;
+            text-shadow: 0px 0px 20px #504b4b;
+      }
+      75%{
+            font-size: 5rem;
+            color: #00ff0d;
+            text-shadow: 0px 0px 20px #00ff0d;
+      }
+      100%{
+            font-size: 4rem;
+            color: #ffff00;
+            text-shadow: 0px 0px 20px #ffff00;
+      }
+
+  }
+
+   .nobita, .shizuka{
+          width: 100%;
+          height: 70vh;
+         background-image: url('Screenshot\ 2023-03-03\ 140316.png');
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          align-content: center;
+
+   }
+
+   .nobita_photo,.shizuka_photo{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+   }
+   .nobita__, .shizuka__{
+           width: 18%;
+           position: absolute;
+   }
+   .frame{
+        width: 15rem;
+        height: 40vh;
+        border: 0.5rem solid #000000;
+        margin-top: 50%;
+        margin-left: -50%;
+   }
+   .nobita_information , .shizuka_information{
+         margin-top:10%;
+   }
+   .nobita_information h1,  .shizuka_information h1  {
+             font-size:3rem;
+             margin-bottom: 2%;
+             color: #fff;
+   }
+ hr{
+      margin-top: 3%;
+          width: 20%;
+          border: 2px solid rgb(244, 244, 244);
+          margin-left: -10%;
+   }
+   .nobita_information p,  .shizuka_information p{
+      display: flex;
+      flex-wrap: wrap;
+      text-justify: auto;
+      color: #fff;
+      margin-top: 8%;
+      font-size: 1.5rem;
+      font-family: 'Dancing Script', cursive;
+   }
+   .lovestory{
+         width: 100%;
+         height: 90vh;
+         
+   }
+  
+   
+   .lovestory h1{
+          padding-top: 5%;
+           font-size: 2.5rem;
+           margin-left: 45%;
+           margin-bottom: 3%;
+           color: #00ffd5;
+   }
+  
+   
+   .glow-on-hover {
+      
+      border: none;
+      padding: 0.5rem 2rem;
+      margin-left: 5%;
+      margin-top: 5%;
+      outline: none;
+      color: #fff;
+      background: #111;
+      cursor: pointer;
+      position: absolute;
+      z-index: 0;
+      border-radius: 10px;
+  }
+  
+  .glow-on-hover:before {
+      content: '';
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      position: absolute;
+      top: -2px;
+      left:-2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+      color: #000
+  }
+  
+  .glow-on-hover:active:after {
+      background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+      opacity: 1;
+  }
+  @keyframes glowing {
+      0% { background-position: 0 0; }
+      50% { background-position: 400% 0; }
+      100% { background-position: 0 0; }
+  }
+   @keyframes glowing {
+      0% { background-position: 0 0; }
+      50% { background-position: 400% 0; }
+      100% { background-position: 0 0; }
+  }
+
+  .gallery_div{
+        width: 100%;
+        height: 80vh;
+        background: url('Screenshot\ 2023-03-03\ 140316.png');
+        display: flex;
+        justify-content: center;
+         align-items: center;
+      
+  }
+  .gallery{
+         width: 80%;
+         height: 70%;
+         background-color: transparent;
+         display: flex;
+         /* position: relative; */
+         overflow-x: scroll;
+         /* scrollbar-width: 10%;
+         scrollbar-color: rebeccapurple green; */
+         scroll-behavior: smooth;
+
+         
+  }
+  .gallery img{
+         width: 90%;
+         padding: 2%;
+         filter: contrast(150%);
+  }
+  .gallery_div h3{
+           position: absolute;
+           font-size: 3rem;
+           margin-top: 35%;
+  }
+
+    .footer{
+        width: 100%;
+        height: 70vh;
+        /* background-color: #000000; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff url('http://4.bp.blogspot.com/-hZhomdzAgQY/U4AMX1nSBUI/AAAAAAAAHr4/-8F-L120So0/s1600/doraemon+3.gif');
+        background-position-y: 20%;
+        filter: brightness(10px);
+         background-size: cover;
+        
+        
+    }
+    .footer img{
+         width: 20%;
+         border: 20px solid transparent;
+         box-shadow: 5px 0px 5px rgb(2, 2, 2),
+         1px 5px 5px rgb(2, 2, 2),
+         2px 5px 5px rgb(2, 2, 2),
+         0px 0px 5px rgb(2, 2, 2);
+    }
+    .footer a{
+      font-size: 4rem;
+      color: #000000;
+      font-weight: bold;
+      margin: 5%;
+      text-shadow: 0px 0px 5px red;
+      font-family: 'Rampart One', cursive;
+    }
+    #scrollToTopBtn {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      font-size: 2rem;
+      line-height: 48px;
+      width: 48px;
+      padding: 0px 10px;
+      border-radius: 50%;
+      font-weight: bold;
+      border: 3px solid black;
+      position: fixed;
+        top: 90%;
+        left: 95%;
+        z-index: 9;
+        animation: raj2 2s infinite;
+      
+    }
+    @keyframes raj2 {
+      0%{
+         box-shadow: 0px 0px 20px red;
+          
+      }
+      10%{
+            box-shadow: 0px 0px 20px rgb(255, 81, 0);
+             
+         }
+         20%{
+            box-shadow: 0px 0px 20px rgb(255, 162, 0);
+             
+         }
+         30%{
+            box-shadow: 0px 0px 20px rgb(255, 208, 0);
+             
+         }
+         40%{
+            box-shadow: 0px 0px 20px rgb(234, 255, 0);
+             
+         }
+         50%{
+            box-shadow: 0px 0px 20px rgb(89, 255, 0);
+             
+         }
+      60%{
+            box-shadow: 0px 0px 20px rgb(0, 255, 132); 
+
+      }
+
+      70%{
+            box-shadow: 0px 0px 20px rgb(0, 255, 225);
+      }
+      80%{
+            box-shadow: 0px 0px 20px rgb(0, 51, 255); 
+      }
+      90%{
+            box-shadow: 0px 0px 20px rgb(230, 0, 255);
+      }
+      100%{
+            box-shadow: 0px 0px 20px rgb(0, 0, 0);
+             
+         }
+
+  }
+
+    .menubar{
+          width: 4%;
+          height: 40vh;
+          background-color: #208374;
+          position: fixed;
+          left: 0%;
+          top: 40%;
+          border-radius: 0px 15px 15px 0px;
+          animation:slide 3s ease-in-out infinite alternate;
+          background-image: linear-gradient(-60deg, rgb(219, 226, 215) 50%, #09f 50%);
+    }
+    @keyframes ani {
+               
+            0% {
+              transform:translateX(-25%);
+            }
+            100% {
+              transform:translateX(25%);
+            }
+          
+    }
+    .menubar ul{
+        display: block;
+    }
+    .menubar ul a{
+         font-size: 1.8rem;
+         color: #000;
+         margin-left: 20%;
+   }
+   /* .home--{
+       color: #fff;
+   } */
+    .home-icon{
+        
+        background-color: #886f6f;
+        padding-bottom: 0.5rem;
+        font-size: 2rem;
+        border-radius: 0px 15px 0px 0px;
+        border-bottom: 5px solid #000000;
+    }
+    .menubar ul li{
+        margin-bottom: 0.2rem;
+        
+    }
+    .facebook , .snapchat , .Youtu ,.Instagram ,.map ,.whatsapp {
+         display: none;
+    }
+    #face:hover .facebook , #snap:hover .snapchat ,#you:hover .Youtu , #map:hover .map , #insta:hover .Instagram ,#whats:hover .whatsapp{
+        display: inline;
+        position: absolute;
+        margin-left: 60%;
+    }
+    #face:hover .facebook p , #snap:hover .snapchat p ,#you:hover .Youtu p, #map:hover .map p, #insta:hover .Instagram p,#whats:hover .whatsapp p {
+            font-size: 1rem;
+            background-color: rgb(188, 190, 181);
+            padding: 0.5rem 2rem;
+            color: #050505;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 0px 15px;
+
+    }
+    

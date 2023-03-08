@@ -1,0 +1,137 @@
+*{
+     margin: 0;
+     padding: 0;
+    
+}
+.our_photos_gallery{
+       width: 100%;
+       height: auto;
+       box-sizing: border-box;
+       padding:3%;
+       display: flex;
+       flex-wrap: wrap;
+       background: url('Screenshot\ 2023-03-03\ 140316.png');
+       overflow-x: hidden;
+}
+.our_photos_gallery img{
+      width:50%;
+      padding: 2%;
+      
+}
+.our_photos_gallery img {
+    --s: 250px;   
+    --b: 8px;     
+    --c: #4ECDC4;
+    width: var(--s);
+    aspect-ratio: 1;
+    margin: 1%;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.our_photos_gallery img:hover{
+    outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
+.movement {
+      width: 100%;
+      height: auto;
+      padding: 5%;
+      padding-left: 10%;
+      background: url('Screenshot\ 2023-03-03\ 140316.png');
+      display: flex;
+      justify-content: left;
+      align-items: center;   
+      box-sizing: border-box;
+}
+.movement img{
+      width: 20%;
+      margin-right: 10%;
+      border: 8px solid transparent;
+      box-shadow: 0px 0px 20px #fff;
+      
+}
+
+.movement p:hover{
+        color: #fff;
+        text-shadow: 0 0 5px #03e9f4,
+                    0 0 15px #03e9f4,
+                    0 0 20px #03e9f4,
+                    0 0 50px #03e9f4;
+      
+      
+}
+.movement p{
+      font-size: 2rem;
+      font-weight: bold;
+      color: beige;
+      transition: 2s;
+}
+.app_icon{
+      width: 100%;
+      height: 50%;
+}
+.about_div{
+        width: 100%;
+        height: 80vh;
+        background: url('Screenshot\ 2023-03-03\ 140316.png');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.app_icon a{
+      color: rgb(255, 255, 255);
+      font-size: 7rem;
+      animation: change 5s infinite;
+}
+.app_icon a:hover{
+       border-bottom: 5px solid rgba(255, 255, 255, 0.907);
+       
+}
+@keyframes change{
+        0%{
+            color: red;
+        }
+        10%{
+            color: rgb(255, 106, 0);
+        }
+        20%{
+            color: rgb(255, 187, 0);
+        }
+        30%{
+            color: rgb(251, 255, 0);
+        }
+        40%{
+            color: rgb(102, 255, 0);
+        }
+        50%{
+            color: rgb(0, 255, 55);
+        }
+        60%{
+            color: rgb(0, 255, 204);
+        }
+        70%{
+            color: rgb(0, 123, 255);
+        }
+        80%{
+            color: rgb(0, 8, 255);
+        }
+        90%{
+            color: rgb(234, 0, 255);
+        }
+        100%{
+            color: rgb(255, 0, 136);
+        }
+}
+.app_icon ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+}
+.app_icon li{
+      margin: 5%;
+}

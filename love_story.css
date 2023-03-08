@@ -1,0 +1,66 @@
+*{
+       margin: 0;
+       padding: 0;
+
+}
+.love_s {
+      width: 100%;
+      height: 80%;
+      background: url('Screenshot\ 2023-03-03\ 140316.png');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.our_date{
+       font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 5%;
+    color: rgb(255, 136, 0);
+    margin-top: 10%;
+}
+.teddy{
+      width: 30%;
+      margin-top: -20%;
+      position: relative;
+      transform: rotate(360deg);
+      transition-delay: 0;
+      z-index: 1;
+      transition: all 0.6s;
+}
+.teddy:hover{
+    -ms-transform: rotate(15deg); 
+    -webkit-transform: rotate(15deg); 
+    transform: rotate(15deg);
+}
+.date1{
+       width: 75%;
+       margin-left: 3%;
+       margin-top: 10%;
+       height: 90%;
+       background-color: transparent;
+       display: flex;
+       box-shadow: 0px 0px 20px #fff;
+       justify-content: center;
+       /* align-items: center; */
+}
+
+
+.date_info{
+      margin-left: 5%;
+}
+.date_info p{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5%;
+      font-family: 'Satisfy', cursive;
+      font-size: 1.3rem;
+      color: #fff;
+      padding: 3%;
+      z-index: 11;
+      position: relative;
+      text-shadow: 2px 5px 20px rgb(157, 213, 235);
+}
+.date1 .image{
+      width: 50%;
+      padding: 5%
+}
